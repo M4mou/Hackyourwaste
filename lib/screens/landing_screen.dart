@@ -111,6 +111,7 @@ class landingScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         GestureDetector(
+                          onTap: (() => Null),
                           child: Container(
                             width: 240,
                             height: 72,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hazebi/screens/landing_screen.dart';
 import 'package:hazebi/screens/signin.dart';
+import 'package:hazebi/screens/verify_mail_screen.dart';
 
 void main() {
   runApp(const Main());
@@ -15,7 +16,7 @@ class Main extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: landingScreen(),
+      home: verifyMailScreen(),
     );
   }
 }
