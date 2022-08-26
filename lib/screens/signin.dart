@@ -37,8 +37,8 @@ class SignInPageState extends State<SignInPage> {
                   email = value;
                 });
               },
-              decoration: const InputDecoration(prefixIcon: Icon(Icons.mail),
-                border: const OutlineInputBorder(),
+              decoration: InputDecoration(prefixIcon: Icon(Icons.mail),
+                border: OutlineInputBorder( borderRadius: BorderRadius.circular(30.0)),
                 labelText: 'Email or phone number',
               ),
             ),
@@ -55,7 +55,7 @@ class SignInPageState extends State<SignInPage> {
               decoration: InputDecoration(
                 prefixIcon: const Icon(Icons.lock),
                 suffixIcon: o,
-                border: const OutlineInputBorder(),
+                border: OutlineInputBorder( borderRadius: BorderRadius.circular(30.0)),
                 labelText: 'Password',
               ),
             ),SizedBox(height: h * 0.02),
@@ -72,7 +72,7 @@ class SignInPageState extends State<SignInPage> {
           ),
         )
           ,),
-
+          SizedBox(height: h * 0.08),
           TextButton(
             onPressed: () {},
             child:Container(
@@ -82,7 +82,7 @@ class SignInPageState extends State<SignInPage> {
                 color: Color(0xff1fcc79),
               ),
               padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 19, ),
-              child: Text(
+              child: const Text(
                     "Login",
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -95,6 +95,43 @@ class SignInPageState extends State<SignInPage> {
                   ),
               ),
             ),
+          SizedBox(height: h * 0.02),
+          const Text(
+            "Or continue with",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Color(0xff9fa5c0),
+              fontSize: 15,
+              fontFamily: "Inter",
+              fontWeight: FontWeight.w500,
+              letterSpacing: 0.50,
+            ),
+          ),
+          SizedBox(height: h * 0.02),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+            const Text(
+              "Don’t have any account?",
+              style: TextStyle(
+                color: Color(0xff2d3d5c),
+                fontSize: 15,
+                fontFamily: "Inter",
+                fontWeight: FontWeight.w500,
+                letterSpacing: 0.50,
+              ),
+            ), TextButton(onPressed: (){}, child: const Text(
+              "Sign Up",
+              textAlign: TextAlign.right,
+              style: TextStyle(
+                color: Color(0xff1fcc79),
+                fontSize: 15,
+                fontFamily: "Inter",
+                fontWeight: FontWeight.w700,
+                letterSpacing: 0.50,
+              ),
+            ))
+          ],)
 
         ]
       )));
