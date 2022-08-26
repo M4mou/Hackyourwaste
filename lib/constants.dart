@@ -2,6 +2,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class Constants {
+  static Color greencolor = const Color(0xFFB5E1C2);
+  static Color darkgreencolor = const Color(0xFF219653);
   static Text welcome = const Text("Welcome Back!",
       textAlign: TextAlign.center,
       style: TextStyle(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hazebi/screens/landing_screen.dart';
 import 'package:hazebi/screens/signin.dart';
 
 void main() {
@@ -10,11 +11,11 @@ class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-
-      home: const HomePage(),
+      home: landingScreen(),
     );
   }
 }
@@ -28,8 +29,6 @@ class HomePage extends StatefulWidget {
 class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-
-    return Scaffold(body:
-      SignInPage());
+    return Scaffold(body: landingScreen());
   }
 }
