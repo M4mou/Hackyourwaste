@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-
-=======
->>>>>>> 30c6d4cc48e07fc674a333632492d05ffdd229e0
 import 'package:hazebi/screens/homesubscreen.dart';
 import 'package:hazebi/screens/landing_screen.dart';
 import 'package:hazebi/screens/profile_screen.dart';
+import 'package:hazebi/screens/scanner.dart';
 import 'package:hazebi/screens/signin.dart';
 import 'package:hazebi/screens/signup.dart';
+import 'package:yandex_mapkit/yandex_mapkit.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -24,7 +22,10 @@ class HomeScreenState extends State<HomeScreen> {
     HomeSubscreen(),
     Text('Shop'),
     Text('Scan'),
-    Text('Notification'),
+  Scaffold(body:
+  Column(children: [
+  Expanded(child: YandexMap())
+  ],),),
     profileScreen()
   ];
   void _onItemTapped(int index) {
@@ -51,17 +52,14 @@ class HomeScreenState extends State<HomeScreen> {
                   color: Color(0xff27ae60), // Button color
                   child: InkWell(
                     splashColor: Color(0xff27ae60), // Splash color
-<<<<<<< HEAD
+
                     onTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => Text('hi')),
+                            builder: (context) => Scanner()),
                       );
                     },
-=======
-                    onTap: () {},
->>>>>>> 30c6d4cc48e07fc674a333632492d05ffdd229e0
                     child: SizedBox(
                         width: 56,
                         height: 56,
@@ -72,8 +70,8 @@ class HomeScreenState extends State<HomeScreen> {
               ),
               label: "Scan"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.person_pin_circle, size: iconsize),
-              label: "Notification"),
+              icon: Icon(Icons.map_rounded, size: iconsize),
+              label: "Map"),
           BottomNavigationBarItem(
               icon: GestureDetector(
                   onTap: () {

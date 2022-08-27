@@ -5,11 +5,11 @@ import 'package:hazebi/screens/cupon_screen.dart';
 import 'package:hazebi/screens/homescreen.dart';
 
 import 'package:hazebi/screens/landing_screen.dart';
-<<<<<<< HEAD
+
 import 'package:hazebi/screens/scanner.dart';
-=======
+
 import 'package:hazebi/screens/profile_screen.dart';
->>>>>>> 30c6d4cc48e07fc674a333632492d05ffdd229e0
+
 import 'package:hazebi/screens/signin.dart';
 
 import 'package:hazebi/screens/verify_mail_screen.dart';
@@ -22,16 +22,12 @@ void main() {
 
 class Main extends StatelessWidget {
   Main({Key? key}) : super(key: key);
-  Widget map = Scaffold(body:
-  Column(children: [
-    Expanded(child: YandexMap())
-  ],),);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: MyApp(),
+      home: landingScreen(),
     );
   }
 }
