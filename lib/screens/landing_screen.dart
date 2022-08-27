@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hazebi/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:dots_indicator/dots_indicator.dart';
+import 'package:hazebi/screens/signin.dart';
 
 class landingScreen extends StatelessWidget {
   landingScreen({Key? key}) : super(key: key);
@@ -35,6 +36,7 @@ class landingScreen extends StatelessWidget {
                 child: Stack(children: [
                   Container(
                     width: MediaQuery.of(context).size.width,
+                    height: MediaQuery.of(context).size.height * 0.55,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
@@ -111,7 +113,13 @@ class landingScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         GestureDetector(
-                          onTap: (() => Null),
+                          onTap: (() {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SignInPage()),
+                            );
+                          }),
                           child: Container(
                             width: 240,
                             height: 72,

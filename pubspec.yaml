@@ -37,6 +37,8 @@ dependencies:
   flutter_svg: ^1.1.4
   dots_indicator: ^2.1.0
   coupon_uikit: ^0.0.1
+  get: ^4.6.5
+  
 
 dev_dependencies:
   flutter_test:
@@ -63,11 +65,11 @@ flutter:
     - assets/images/see.png
     - assets/images/nosee.png
     - assets/images/landingScreenImg.png
+    - assets/images/wael.png
     - assets/images/
   fonts:
     - family: Inter
       fonts:
-        - asset: assets/fonts/Inter-Black.otf
         - asset: assets/fonts/Inter-Bold.otf
         - asset: assets/fonts/Inter-ExtraBold.otf
         - asset: assets/fonts/Inter-ExtraLight.otf
@@ -77,6 +79,13 @@ flutter:
         - asset: assets/fonts/Inter-SemiBold.otf
         - asset: assets/fonts/Inter-Thin.otf
         - asset: assets/fonts/Inter-V.ttf
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Bold.ttf
+        - asset: assets/fonts/Poppins-Light.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-SemiBold.ttf
 
 
   # To add assets to your application, add an assets section, like this:

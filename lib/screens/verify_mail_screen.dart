@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:hazebi/dimensions.dart';
+import 'package:hazebi/screens/homescreen.dart';
 
 import '../constants.dart';
 
@@ -20,20 +22,21 @@ class verifyMailScreen extends StatelessWidget {
         width: double.maxFinite,
         child: SingleChildScrollView(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(height: 120),
+              const SizedBox(height: 40),
               const Text(
                 "Check your email",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Color(0xff3d5480),
-                  fontSize: 22,
+                  fontSize: 17,
                   fontFamily: "Inter",
                   fontWeight: FontWeight.w700,
                   letterSpacing: 0.50,
                 ),
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 20),
               const Text("We've sent the code to your email",
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -109,7 +112,7 @@ class verifyMailScreen extends StatelessWidget {
                   ])),
               const SizedBox(height: 40),
               GestureDetector(
-                onTap: (() => Null),
+                onTap: (() => HomeScreen()),
                 child: Container(
                   width: MediaQuery.of(context).size.width * 0.8,
                   padding: EdgeInsets.symmetric(vertical: 20),
