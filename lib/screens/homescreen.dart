@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hazebi/screens/QR_code_scanner_screen.dart';
 import 'package:hazebi/screens/homesubscreen.dart';
 import 'package:hazebi/screens/landing_screen.dart';
 import 'package:hazebi/screens/signin.dart';
@@ -46,7 +47,13 @@ class HomeScreenState extends State<HomeScreen> {
                   color: Color(0xff27ae60), // Button color
                   child: InkWell(
                     splashColor: Color(0xff27ae60), // Splash color
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => QRViewExample()),
+                      );
+                    },
                     child: SizedBox(
                         width: 56,
                         height: 56,
