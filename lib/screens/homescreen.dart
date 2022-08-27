@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 30c6d4cc48e07fc674a333632492d05ffdd229e0
 import 'package:hazebi/screens/homesubscreen.dart';
 import 'package:hazebi/screens/landing_screen.dart';
+import 'package:hazebi/screens/profile_screen.dart';
 import 'package:hazebi/screens/signin.dart';
 import 'package:hazebi/screens/signup.dart';
 
@@ -21,7 +25,7 @@ class HomeScreenState extends State<HomeScreen> {
     Text('Shop'),
     Text('Scan'),
     Text('Notification'),
-    Text('Profile'),
+    profileScreen()
   ];
   void _onItemTapped(int index) {
     setState(() {
@@ -47,6 +51,7 @@ class HomeScreenState extends State<HomeScreen> {
                   color: Color(0xff27ae60), // Button color
                   child: InkWell(
                     splashColor: Color(0xff27ae60), // Splash color
+<<<<<<< HEAD
                     onTap: () {
                       Navigator.push(
                         context,
@@ -54,6 +59,9 @@ class HomeScreenState extends State<HomeScreen> {
                             builder: (context) => Text('hi')),
                       );
                     },
+=======
+                    onTap: () {},
+>>>>>>> 30c6d4cc48e07fc674a333632492d05ffdd229e0
                     child: SizedBox(
                         width: 56,
                         height: 56,
@@ -67,7 +75,15 @@ class HomeScreenState extends State<HomeScreen> {
               icon: Icon(Icons.person_pin_circle, size: iconsize),
               label: "Notification"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.person, size: iconsize), label: "Notification"),
+              icon: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => profileScreen()),
+                    );
+                  },
+                  child: Icon(Icons.person, size: iconsize)),
+              label: "Profil"),
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Color(0xff27ae60),

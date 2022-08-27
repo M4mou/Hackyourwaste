@@ -5,7 +5,11 @@ import 'package:hazebi/screens/cupon_screen.dart';
 import 'package:hazebi/screens/homescreen.dart';
 
 import 'package:hazebi/screens/landing_screen.dart';
+<<<<<<< HEAD
 import 'package:hazebi/screens/scanner.dart';
+=======
+import 'package:hazebi/screens/profile_screen.dart';
+>>>>>>> 30c6d4cc48e07fc674a333632492d05ffdd229e0
 import 'package:hazebi/screens/signin.dart';
 
 import 'package:hazebi/screens/verify_mail_screen.dart';

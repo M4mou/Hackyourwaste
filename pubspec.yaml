@@ -38,8 +38,12 @@ dependencies:
   dots_indicator: ^2.1.0
   coupon_uikit: ^0.0.1
   get: ^4.6.5
+<<<<<<< HEAD
   yandex_mapkit: ^3.0.3
   flutter_barcode_scanner: ^2.0.0
+=======
+
+>>>>>>> 30c6d4cc48e07fc674a333632492d05ffdd229e0
   
 
 dev_dependencies:

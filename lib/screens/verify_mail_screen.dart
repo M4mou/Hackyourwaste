@@ -112,7 +112,12 @@ class verifyMailScreen extends StatelessWidget {
                   ])),
               const SizedBox(height: 40),
               GestureDetector(
-                onTap: (() => HomeScreen()),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                  );
+                },
                 child: Container(
                   width: MediaQuery.of(context).size.width * 0.8,
                   padding: EdgeInsets.symmetric(vertical: 20),
