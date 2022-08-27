@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hazebi/screens/QR_code_scanner_screen.dart';
 import 'package:hazebi/screens/homesubscreen.dart';
 import 'package:hazebi/screens/landing_screen.dart';
+import 'package:hazebi/screens/profile_screen.dart';
 import 'package:hazebi/screens/signin.dart';
 import 'package:hazebi/screens/signup.dart';
 
@@ -21,7 +22,7 @@ class HomeScreenState extends State<HomeScreen> {
     Text('Shop'),
     Text('Scan'),
     Text('Notification'),
-    Text('Profile'),
+    profileScreen()
   ];
   void _onItemTapped(int index) {
     setState(() {
@@ -47,13 +48,7 @@ class HomeScreenState extends State<HomeScreen> {
                   color: Color(0xff27ae60), // Button color
                   child: InkWell(
                     splashColor: Color(0xff27ae60), // Splash color
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => QRViewExample()),
-                      );
-                    },
+                    onTap: () {},
                     child: SizedBox(
                         width: 56,
                         height: 56,
@@ -67,7 +62,15 @@ class HomeScreenState extends State<HomeScreen> {
               icon: Icon(Icons.person_pin_circle, size: iconsize),
               label: "Notification"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.person, size: iconsize), label: "Notification"),
+              icon: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => profileScreen()),
+                    );
+                  },
+                  child: Icon(Icons.person, size: iconsize)),
+              label: "Profil"),
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Color(0xff27ae60),
