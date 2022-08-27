@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hazebi/screens/QR_code_scanner_screen.dart';
 import 'package:hazebi/screens/homesubscreen.dart';
 import 'package:hazebi/screens/landing_screen.dart';
 import 'package:hazebi/screens/profile_screen.dart';
