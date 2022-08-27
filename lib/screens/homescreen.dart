@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hazebi/screens/QR_code_scanner_screen.dart';
+
 import 'package:hazebi/screens/homesubscreen.dart';
 import 'package:hazebi/screens/landing_screen.dart';
 import 'package:hazebi/screens/signin.dart';
@@ -51,7 +51,7 @@ class HomeScreenState extends State<HomeScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => QRViewExample()),
+                            builder: (context) => Text('hi')),
                       );
                     },
                     child: SizedBox(

@@ -5,24 +5,29 @@ import 'package:hazebi/screens/cupon_screen.dart';
 import 'package:hazebi/screens/homescreen.dart';
 
 import 'package:hazebi/screens/landing_screen.dart';
+import 'package:hazebi/screens/scanner.dart';
 import 'package:hazebi/screens/signin.dart';
 
 import 'package:hazebi/screens/verify_mail_screen.dart';
 
 import 'package:hazebi/screens/signup.dart';
-
+import 'package:yandex_mapkit/yandex_mapkit.dart';
 void main() {
-  runApp(const Main());
+  runApp(Main());
 }
 
 class Main extends StatelessWidget {
-  const Main({Key? key}) : super(key: key);
+  Main({Key? key}) : super(key: key);
+  Widget map = Scaffold(body:
+  Column(children: [
+    Expanded(child: YandexMap())
+  ],),);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: landingScreen(),
+      home: MyApp(),
     );
   }
 }
