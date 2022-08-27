@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:hazebi/screens/homescreen.dart';
 import 'package:hazebi/screens/landing_screen.dart';
 import 'package:hazebi/screens/signin.dart';
-<<<<<<< HEAD
+
 import 'package:hazebi/screens/verify_mail_screen.dart';
-=======
+
 import 'package:hazebi/screens/signup.dart';
->>>>>>> 9e44c11c90c503f29f63c19bc975d17bc78a4771
+
 
 void main() {
   runApp(const Main());
@@ -20,11 +21,8 @@ class Main extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-<<<<<<< HEAD
-      home: verifyMailScreen(),
-=======
-      home: HomePage(),
->>>>>>> 9e44c11c90c503f29f63c19bc975d17bc78a4771
+
+      home: HomeScreen(),
     );
   }
 }
