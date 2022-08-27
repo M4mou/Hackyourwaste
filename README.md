@@ -1,4 +1,3 @@
-# hazebi
 
 App for the hackathon
 
