@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:hazebi/dimensions.dart';
-import 'package:hazebi/screens/homescreen.dart';
+import 'package:HackYourWaste/dimensions.dart';
+import 'package:HackYourWaste/screens/homescreen.dart';
 
 import '../constants.dart';
 

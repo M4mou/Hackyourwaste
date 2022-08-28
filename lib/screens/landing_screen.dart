@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hazebi/constants.dart';
+import 'package:HackYourWaste/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:dots_indicator/dots_indicator.dart';
-import 'package:hazebi/screens/signin.dart';
+import 'package:HackYourWaste/screens/signin.dart';
 
 class landingScreen extends StatelessWidget {
   landingScreen({Key? key}) : super(key: key);

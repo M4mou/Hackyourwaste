@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:hazebi/screens/homesubscreen.dart';
-import 'package:hazebi/screens/landing_screen.dart';
-import 'package:hazebi/screens/profile_screen.dart';
-import 'package:hazebi/screens/scanner.dart';
-import 'package:hazebi/screens/signin.dart';
-import 'package:hazebi/screens/signup.dart';
+import 'package:HackYourWaste/screens/homesubscreen.dart';
+import 'package:HackYourWaste/screens/landing_screen.dart';
+import 'package:HackYourWaste/screens/profile_screen.dart';
+import 'package:HackYourWaste/screens/scanner.dart';
+import 'package:HackYourWaste/screens/signin.dart';
+import 'package:HackYourWaste/screens/signup.dart';
 import 'package:yandex_mapkit/yandex_mapkit.dart';
 
 class HomeScreen extends StatefulWidget {

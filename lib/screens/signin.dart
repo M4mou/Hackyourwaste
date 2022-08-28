@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hazebi/constants.dart';
-import 'package:hazebi/screens/homescreen.dart';
-import 'package:hazebi/screens/signup.dart';
+import 'package:HackYourWaste/constants.dart';
+import 'package:HackYourWaste/screens/homescreen.dart';
+import 'package:HackYourWaste/screens/signup.dart';
 
 import '../widgets/see.dart';
 

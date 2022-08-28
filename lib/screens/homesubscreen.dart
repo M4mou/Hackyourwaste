@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hazebi/screens/cupon_screen.dart';
-import 'package:hazebi/screens/homescreen.dart';
-import 'package:hazebi/screens/landing_screen.dart';
-import 'package:hazebi/screens/signin.dart';
-import 'package:hazebi/screens/signup.dart';
+import 'package:HackYourWaste/screens/cupon_screen.dart';
+import 'package:HackYourWaste/screens/homescreen.dart';
+import 'package:HackYourWaste/screens/landing_screen.dart';
+import 'package:HackYourWaste/screens/signin.dart';
+import 'package:HackYourWaste/screens/signup.dart';
 
 class HomeSubscreen extends StatefulWidget {
   const HomeSubscreen({Key? key}) : super(key: key);

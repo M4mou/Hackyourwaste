@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "tn.autofill" "\0"
-            VALUE "FileDescription", "hazebi" "\0"
+            VALUE "FileDescription", "HackYourWaste" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "hazebi" "\0"
+            VALUE "InternalName", "HackYourWaste" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 tn.autofill. All rights reserved." "\0"
-            VALUE "OriginalFilename", "hazebi.exe" "\0"
-            VALUE "ProductName", "hazebi" "\0"
+            VALUE "OriginalFilename", "HackYourWaste.exe" "\0"
+            VALUE "ProductName", "HackYourWaste" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

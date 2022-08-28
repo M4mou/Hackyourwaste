@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="tn.autofill.hazebi">
+    package="tn.autofill.HackYourWaste">
    <application
-        android:label="hazebi"
+        android:label="HackYourWaste"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

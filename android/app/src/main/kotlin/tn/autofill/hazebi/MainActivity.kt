@@ -1,4 +1,4 @@
-package tn.autofill.hazebi
+package tn.autofill.HackYourWaste
 
 import io.flutter.embedding.android.FlutterActivity
 import androidx.annotation.NonNull
